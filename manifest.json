@@ -4,6 +4,8 @@
    "extensions": [
     "adaptivesearchsolr",
     "adaptivesearchbackoffice",
+    "adaptivesearchsamplesaddon",
+    "adaptivesearchwebservices",
     "b2bcommercebackoffice",
     "solrfacetsearchbackoffice",
     "yacceleratorbackoffice",
@@ -62,65 +64,82 @@
     "odata2webservices",
     "odata2webservicesfeaturetests",
     "kymaintegrationbackoffice",
-    "yb2bacceleratorstorefront"
+    "yb2bacceleratorstorefront",
+    "sapcoreaddon",
+    "sapcoreconfigurationbackoffice",
+    "sapcoretest"
    ],
    "storefrontAddons" : [
         {
-            "addon": "commerceorgsamplesaddon",
-            "storefront": "yacceleratorstorefront",
-            "template": "yacceleratorstorefront"
-        },
-        {
-            "addon": "assistedservicestorefront",
-            "storefront": "yacceleratorstorefront",
-            "template": "yacceleratorstorefront"
-        },
-        {
-            "addon": "customerticketingaddon",
-            "storefront": "yacceleratorstorefront",
-            "template": "yacceleratorstorefront"
-        },
-        {
-            "addon": "promotionenginesamplesaddon",
-            "storefront": "yacceleratorstorefront",
-            "template": "yacceleratorstorefront"
-        },
-        {
-            "addon": "textfieldconfiguratortemplateaddon",
-            "storefront": "yacceleratorstorefront",
+            "addon": "adaptivesearchsamplesaddon",
+            "storefront": "yb2bacceleratorstorefront",
             "template": "yacceleratorstorefront"
         },
         {
             "addon": "orderselfserviceaddon",
-            "storefront": "yacceleratorstorefront",
+            "storefront": "yb2bacceleratorstorefront",
+            "template": "yacceleratorstorefront"
+        },
+		        {
+            "addon": "acceleratorwebservicesaddon",
+            "storefront": "ycommercewebservices",
+            "template": "ycommercewebservices"
+        },
+        {
+            "addon": "b2bacceleratoraddon",
+            "storefront": "yb2bacceleratorstorefront",
+            "template": "yacceleratorstorefront"
+        },
+		        {
+            "addon": "commerceorgaddon",
+            "storefront": "yb2bacceleratorstorefront",
+            "template": "yacceleratorstorefront"
+        },
+        {
+            "addon": "commerceorgsamplesaddon",
+            "storefront": "yb2bacceleratorstorefront",
+            "template": "yacceleratorstorefront"
+        },
+		  {
+            "addon": "customerticketingaddon",
+            "storefront": "yb2bacceleratorstorefront",
+            "template": "yacceleratorstorefront"
+        },
+        {
+            "addon": "promotionenginesamplesaddon",
+            "storefront": "yb2bacceleratorstorefront",
+            "template": "yacceleratorstorefront"
+        },
+		  {
+            "addon": "textfieldconfiguratortemplateaddon",
+            "storefront": "yb2bacceleratorstorefront",
             "template": "yacceleratorstorefront"
         },
         {
             "addon": "smarteditaddon",
-            "storefront": "yacceleratorstorefront",
-            "template": "yacceleratorstorefront"
-        },
-        {
-            "addon": "sapcoreaddon",
-            "storefront": "yacceleratorstorefront",
+            "storefront": "yb2bacceleratorstorefront",
             "template": "yacceleratorstorefront"
         },
         {
             "addon": "pcmbackofficesamplesaddon",
-            "storefront": "yacceleratorstorefront",
+            "storefront": "yb2bacceleratorstorefront",
+            "template": "yacceleratorstorefront"
+        },
+        {
+            "addon": "assistedservicestorefront",
+            "storefront": "yb2bacceleratorstorefront",
             "template": "yacceleratorstorefront"
         }
-        
     ],
    "properties": [
         {
      	      "key":"hac.webroot",
      	      "value":"/hac"
     	  },
-    	{
+        {
     		"key":"catalog.sync.active",
     		"value":"false"
-    	},
+    	  },
         {
             "key":"persistence.legacy.mode",
             "value":"false"
@@ -157,7 +176,6 @@
      	      "value":"3"
         }
     ],
-    
    "aspects": [
          {
             "name": "backoffice",
@@ -187,7 +205,7 @@
                {
                     "key": "regioncache.queryregion.evictionpolicy",
                     "value": "LRU"
-                }
+               }
             ],
             "webapps": [
                 {
@@ -205,7 +223,7 @@
                 }
             ]
         },
-       {
+        {
             "name": "backgroundProcessing",
             "properties": [
                 {
