@@ -40,7 +40,6 @@
     "cmsoccaddon",
     "pcmbackofficesamplesaddon",
     "secureportaladdon",
-    "datahubbackoffice",
     "sapcoreaddon",
     "sapcoreconfigurationbackoffice",
     "sapmodelbackoffice",
@@ -149,15 +148,6 @@
      	      "key":"keygen.returnorder.code.start",
      	      "value":"6782001"
         },
-
-        {
-     	      "key":"sapcustomerexchange.outbound.datahub.feed",
-     	      "value":"SAPCONSUMER_OUTBOUND_FEED"
-        },
-        {
-     	      "key":"sapcoreconfiguration.datahuboutbound.enabled",
-     	      "value":"true"
-        },
         {
      	      "key":"numberseries.cache.size.order_code",
      	      "value":"1"
@@ -165,34 +155,6 @@
         {
      	      "key":"saporderexchange.orderoutbound.maxRetries",
      	      "value":"3"
-        },
-        { 
-            "key": "datahubadapter.security.https.enabled",
-            "value" : "false"
-        } ,
-        {
-            "key": "datahubadapter.datahuboutbound.user",
-            "value":"admin"
-        },
-        {
-            "key": "datahubadapter.datahuboutbound.password",
-            "value":"nimda"
-        },
-        { 
-            "key": "datahub.backoffice.rest.client.username.admin",
-            "value":"admin"
-        },
-        { 
-            "key": "datahub.backoffice.rest.client.password.admin",
-            "value":"nimda"
-        },
-        { 
-            "key": "datahub.backoffice.rest.client.username.developer",
-            "value":"admin"
-        },
-        { 
-            "key": "datahub.backoffice.rest.client.password.developer",
-            "value":"nimda"
         }
     ],
     
@@ -212,10 +174,6 @@
                 {
                     "name": "backoffice",
                     "contextPath": "/backoffice"
-                },
-                {
-                    "name": "datahubadapter",
-                    "contextPath": "/datahubadapter"
                 },
                 {
                     "name": "oauth2",
@@ -241,7 +199,7 @@
                     "contextPath": "/medias"
                 },
                 {
-                    "name": "yacceleratorstorefront",
+                    "name": "yb2bacceleratorstorefront",
                     "contextPath": ""
 
                 }
@@ -283,10 +241,6 @@
                 {
                     "name": "mediaweb",
                     "contextPath": "/medias"
-                },
-                {
-                    "name": "datahubadapter",
-                    "contextPath": "/datahubadapter"
                 },
                 {
                     "name": "oauth2",
